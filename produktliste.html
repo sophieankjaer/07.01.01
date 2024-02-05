@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Produktliste</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="kategori.html">Kategori</a></li>
+          <li><a href="produktliste.html">Produktliste</a></li>
+          <li><a href="produkt.html">Produkt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <template id="smallProductTemplate">
+        <article class="smallProduct">
+          <a href="produkt.html">
+            <h1>Nike</h1>
+            <h2>Sahara Team India Fanwear Round Neck Jersey</h2>
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+              alt="Nike sport"
+            />
+            <div class="price">$895</div>
+            <div class="usagetype">Sports</div>
+            <div class="gender">Men</div>
+            <button class="sold-out">SOLD OUT</button>
+            <div class="overlay"></div>
+          </a>
+        </article>
+      </template>
+
+      <!--
+      <a href="produkt.html">
+        <article>
+          <h1>Nike</h1>
+          <h2>Blue T20 Indian Cricket Jersey</h2>
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp"
+            alt="Nike sport2"
+          />
+          <div class="price">$1595</div>
+          <div class="usagetype">Sports</div>
+          <div class="gender">Men</div>
+          <button>ADD TO BAG</button>
+        </article>
+      </a>
+
+      <a href="produkt.html">
+        <article class="on-sale">
+          <h1>Nike</h1>
+          <h2>Mean Team India Cricket Jersey</h2>
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp"
+            alt="Nike sport2"
+          />
+          <div class="price">$2495</div>
+          <div class="sale">- 42%</div>
+          <div class="usagetype">Sports</div>
+          <div class="gender">Women</div>
+          <button>ADD TO BAG</button>
+        </article>
+      </a>
+
+      <a href="produkt.html">
+        <article>
+          <h1>Puma</h1>
+          <h2>Deck Navy Blue Backpack</h2>
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
+            alt="pumacas"
+          />
+          <div class="price">$1299</div>
+          <div class="usagetype">Casual</div>
+          <div class="gender">Unisex</div>
+          <button>ADD TO BAG</button>
+        </article>
+      </a>
+
+      <a href="produkt.html">
+        <article>
+          <h1>Puma</h1>
+          <h2>Big Cat Backpack Black</h2>
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp"
+            alt="pumasport"
+          />
+          <div class="price">$1299</div>
+          <div class="usagetype">Sport</div>
+          <div class="gender">Unisex</div>
+          <button>ADD TO BAG</button>
+        </article>
+      </a>
+
+      <a href="produkt.html">
+        <article class="on-sale">
+          <h1>Puma</h1>
+          <h2>Black Fleece Jacket</h2>
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
+            alt="pumacas1"
+          />
+          <div class="price">$3999</div>
+          <div class="sale">- 10%</div>
+          <div class="usagetype">Casual</div>
+          <div class="gender">Men</div>
+          <button>ADD TO BAG</button>
+        </article>
+      </a>
+
+      <a href="produkt.html">
+        <article>
+          <h1>Puma</h1>
+          <h2>Tee</h2>
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp"
+            alt="pumacas2"
+          />
+          <div class="price">$1899</div>
+          <div class="usagetype">Casual</div>
+          <div class="gender">Men</div>
+          <button>ADD TO BAG</button>
+        </article>
+      </a>
+
+      <a href="produkt.html">
+        <article>
+          <h1>Puma</h1>
+          <h2>Track Jacket</h2>
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp"
+            alt="pumasport2"
+          />
+          <div class="price">$4299</div>
+          <div class="usagetype">Sports</div>
+          <div class="gender">Men</div>
+          <button>ADD TO BAG</button>
+        </article>
+      </a>
+
+      <a href="produkt.html">
+        <article>
+          <h1>Puma</h1>
+          <h2>Grey Solid Round Neck T-Shirt</h2>
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1531.webp"
+            alt="pumacas4"
+          />
+          <div class="price">$799</div>
+          <div class="usagetype">Casual</div>
+          <div class="gender">Men</div>
+          <button>ADD TO BAG</button>
+        </article>
+      </a>
+
+      <a href="produkt.html">
+        <article>
+          <h1>Puma</h1>
+          <h2>Grey Leaping Cat T-shirt</h2>
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1532.webp"
+            alt="pumacas4"
+          />
+          <div class="price">$899</div>
+          <div class="usagetype">Casual</div>
+          <div class="gender">Men</div>
+          <button>ADD TO BAG</button>
+        </article>
+      </a>
+      -->
+    </main>
+    <footer>
+      <div class="container">&copy; 2024 min butik.</div>
+    </footer>
+    <script src="produktliste.js"></script>
+  </body>
+</html>

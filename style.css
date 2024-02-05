@@ -1,0 +1,246 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.kh1 {
+  text-align: center;
+  margin: 40px;
+}
+
+header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+main a {
+  text-decoration: none;
+  color: inherit;
+}
+
+article {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+article > div {
+  margin: 10px;
+}
+
+article img {
+  width: 100%;
+  border-radius: 8px;
+  border-radius: 8px;
+}
+
+article p {
+  margin: 10px 0;
+}
+
+article h1 {
+  font-size: 25px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+article h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+article p {
+  margin: 10px 0;
+}
+
+article a {
+  text-decoration: none;
+  color: inherit;
+}
+
+article button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+article button:hover {
+  background-color: #0056b3;
+}
+
+.sold-out {
+  background-color: #cf2d2d;
+}
+
+.overlay {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.171);
+  border-radius: 8px;
+}
+
+.overlay::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+
+.on-sale {
+  position: relative;
+}
+
+.on-sale::before {
+  content: "Tilbud";
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.sale {
+  color: #ef0000;
+  margin-top: -31px;
+  margin-left: 70px;
+}
+
+footer {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#seasons-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#seasons-list article {
+  flex: 0 0 calc(20% - 20px);
+  margin: 10px;
+}
+
+.kate a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overskrift h1 {
+  font-size: 35px;
+}
+
+.overskrift h2 {
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.imgs {
+  display: flex;
+}
+
+.imgs img {
+  width: 50%;
+  margin: 10px;
+}
+
+.tekst > div {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tekst .sale {
+  font-size: 20px;
+  margin-top: -33px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgs {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0;
+    align-items: center;
+  }
+  .imgs img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #seasons-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #seasons-list article {
+    flex: 1 0 auto;
+    margin: 10px 0;
+  }
+}
