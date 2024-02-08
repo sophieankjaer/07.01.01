@@ -4,13 +4,8 @@ body {
   padding: 0;
 }
 
-.kh1 {
-  text-align: center;
-  margin: 40px;
-}
-
 header {
-  background-color: #007bff;
+  background-color: #97c9ff;
   color: #ffffff;
   padding: 10px 0;
   text-align: center;
@@ -114,7 +109,6 @@ article button:hover {
   left: -10px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.171);
   border-radius: 8px;
 }
 
@@ -154,7 +148,8 @@ article button:hover {
 }
 
 footer {
-  background-color: #007bff;
+  background-color: #97c9ff;
+  margin-top: 11%;
   color: #ffffff;
   padding: 10px 0;
   text-align: center;
